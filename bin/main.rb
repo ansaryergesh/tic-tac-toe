@@ -1,5 +1,5 @@
 require_relative "../lib/game.rb"
-require_relative "../lib/players.rb"
+require_relative "../lib/player.rb"
 require_relative "../lib/board.rb"
 
 puts "Welcome to tic-tac-toe"

@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-#### [Live Version](s)
+#### [Live Version](https://repl.it/@ansaryergesh/tic-tac-toe-1)
 
 Language: 
 * Ruby
@@ -15,7 +15,7 @@ Build a tic-tac-toe game on the command line where two human players can play ag
 * A player has to input a number between 1 to 9
 * Once input, it will display in its appropriate box with letters either X or O
 * Keep alternating moves until one of the players has drawn a row of three symbols or until no one can win.
-
+* Draw,  when all fields are full
 # How to run this game
 * First way: You can click the live version of project and run it
 * Second way: You should clone that repo. Write <b>git clone https://github.com/ansaryergesh/tic-tac-toe.git</b> in <b>Git Bash</b> terminal. Then just run main.rb file in some text editor for code. For example you for that text editors as  Sublime, VScode, etc.

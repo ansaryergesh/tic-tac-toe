@@ -26,12 +26,10 @@ end
 def valid_piece(piece)
   loop do
     arr = %w[X O]
-    if arr.include? piece
-      return piece
-    else
-      puts 'Enter a piece again! It should be x or o'
-      piece = gets.chomp.upcase!
-    end
+    return piece if arr.include? piece
+
+    puts 'Enter a piece again! It should be x or o'
+    piece = gets.chomp.upcase!
   end
 end
 

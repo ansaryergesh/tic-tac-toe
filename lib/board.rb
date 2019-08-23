@@ -20,9 +20,10 @@ class Board
     result.win_game
     @counter += 1
     [result.win_game, @counter, @grid]
-    end
+  end
 end
 
+# win class methods when the game win some player
 class Win
   attr_accessor :grid
 

@@ -8,7 +8,7 @@ def display(grid)
   puts '---------'
   puts "#{grid[2][0]} | #{grid[2][1]} | #{grid[2][2]}"
   puts '---------'
-  end
+end
 
 def valid_name(name)
   loop do

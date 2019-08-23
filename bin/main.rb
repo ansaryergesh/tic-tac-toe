@@ -3,7 +3,6 @@ require_relative "../lib/player.rb"
 require_relative "../lib/board.rb"
 
 puts "Welcome to tic-tac-toe"
-puts "Welcome to tic-tac-toe"
 puts "Tic-tac-toe is a fun game that you can play any time and anywhere. But we create that game for you in Ruby. So, you can play it by using terminal"
 puts "Instructions: We Have a 3*3 box"
 puts "A player has to input a number between 1 to 9"
@@ -61,18 +60,15 @@ loop do
     puts "#{player2.name} amount is: #{player2.amount}"
     break
   end
-  play_again = 'y'
- 
-  while play_again == 'y'
+
+  play_again = 'n'
 
   sleep 0.5
   puts "GAME OVER" 
-
-# play again?
   sleep 0.5
+  # play again? if yes write 'y' if no write 'n'
   puts "Play again? (y/n)"
-  play_again = gets.chomp
-  end
+  break if gets.chomp == play_again
 end
 
 # play again?

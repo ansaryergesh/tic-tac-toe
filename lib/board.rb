@@ -61,7 +61,6 @@ end
 def players_info
   name = gets.chomp
   player1 = Player.new(valid_name(name))
-  puts 'X or O'
   piece = gets.chomp.upcase!
   player1.piece = valid_piece(piece)
   name = gets.chomp

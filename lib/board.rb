@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative 'player.rb'
 require_relative 'game.rb'
 
@@ -25,7 +26,6 @@ class Board
   end
 end
 
- 
 def display(grid)
   puts '---------'
   puts "#{grid[0][0]} | #{grid[0][1]} | #{grid[0][2]}"
@@ -44,7 +44,6 @@ def valid_name(name)
       name = gets.chomp
     else
       return name
-      break
     end
   end
 end
@@ -79,4 +78,3 @@ def players_info
 end
 
 # win class methods when the game win some player
-

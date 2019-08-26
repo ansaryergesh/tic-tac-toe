@@ -16,6 +16,7 @@ players = players_info
 player1 = players[0]
 player2 = players[1]
 
+
 loop do
   board = Board.new
   grid = board.grid

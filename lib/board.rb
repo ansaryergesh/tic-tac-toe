@@ -59,18 +59,13 @@ def valid_piece(piece)
 end
 
 def players_info
-  puts 'Name of 1st Player: '
   name = gets.chomp
   player1 = Player.new(valid_name(name))
-
-  puts "Please select there some symbol 'x' or 'o'"
+  puts 'X or O'
   piece = gets.chomp.upcase!
   player1.piece = valid_piece(piece)
-
-  puts 'Please enter 2nd Player name'
   name = gets.chomp
   player2 = Player.new(valid_name(name))
-
   player2.piece = player1.piece == 'X' ? 'O' : 'X'
   [player1, player2]
 end

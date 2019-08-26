@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Class Game
 class Game
   attr_accessor :grid
 

@@ -72,9 +72,5 @@ def players_info
   player2 = Player.new(valid_name(name))
 
   player2.piece = player1.piece == 'X' ? 'O' : 'X'
-  puts "2nd Player's symbol: #{player2.piece}"
-  puts "1st Player's symbol: #{player1.piece}"
   [player1, player2]
 end
-
-# win class methods when the game win some player

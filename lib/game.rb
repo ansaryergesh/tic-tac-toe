@@ -21,15 +21,11 @@ class Game
   end
 
   def left_diagonal
-    return true if @grid[0][0] == @grid[1][1] && @grid[1][1] == @grid[2][2]
-
-    false
+    @grid[0][0] == @grid[1][1] && @grid[1][1] == @grid[2][2]
   end
 
   def right_diagonal
-    return true if @grid[2][0] == @grid[1][1] && @grid[1][1] == @grid[0][2]
-
-    false
+    @grid[2][0] == @grid[1][1] && @grid[1][1] == @grid[0][2]
   end
 
   # Verticals
@@ -38,21 +34,15 @@ class Game
   end
 
   def vertical_one
-    return true if @grid[0][0] == @grid[1][0] && @grid[1][0] == @grid[2][0]
-
-    false
+    @grid[0][0] == @grid[1][0] && @grid[1][0] == @grid[2][0]
   end
 
   def vertical_two
-    return true if @grid[0][1] == @grid[1][1] && @grid[1][1] == @grid[2][1]
-
-    false
+    @grid[0][1] == @grid[1][1] && @grid[1][1] == @grid[2][1]
   end
 
   def vertical_three
-    return true if @grid[0][2] == @grid[1][2] && @grid[1][2] == @grid[2][2]
-
-    false
+    @grid[0][2] == @grid[1][2] && @grid[1][2] == @grid[2][2]
   end
 
   # Horizontals
@@ -61,20 +51,14 @@ class Game
   end
 
   def horizontal_one
-    return true if @grid[0][0] == @grid[0][1] && @grid[0][1] == @grid[0][2]
-
-    false
+    @grid[0][0] == @grid[0][1] && @grid[0][1] == @grid[0][2]
   end
 
   def horizontal_two
-    return true if @grid[1][0] == @grid[1][1] && @grid[1][1] == @grid[1][2]
-
-    false
+    @grid[1][0] == @grid[1][1] && @grid[1][1] == @grid[1][2]
   end
 
   def horizontal_three
-    return true if @grid[2][0] == @grid[2][1] && @grid[2][1] == @grid[2][2]
-
-    false
+    @grid[2][0] == @grid[2][1] && @grid[2][1] == @grid[2][2]
   end
 end
